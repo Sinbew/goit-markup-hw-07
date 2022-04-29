@@ -1,65 +1,65 @@
 .form-group {
-  &__checkbox {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  color: var(--main-grey);
+}
 
-    margin-bottom: 30px;
+.form-group__checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+  margin-bottom: 30px;
 
-    color: var(--main-grey);
-  }
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
 
-  &__checkbox &__policy-link {
-    color: var(--main-blue);
-    text-decoration: underline;
-  }
+.form-group__checkbox .form-group__policy-link {
+  color: var(--main-blue);
+  text-decoration: underline;
+}
 
-  &__checkbox-input {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    border: 0;
-    clip: rect(0 0 0 0);
-  }
+.form-group__checkbox-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
 
-  &__checkbox-check {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.form-group__checkbox-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    margin-right: 7px;
-    width: 16px;
-    height: 15px;
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
 
-    border: 2px solid var(--main-black);
-    border-radius: 2px;
+  border: 2px solid var(--main-black);
+  border-radius: 2px;
 
-    transition: border-color 250ms ease, background-color 250ms ease;
-  }
+  transition: border-color 250ms ease, background-color 250ms ease;
+}
 
-  &__checkbox-input:checked ~ &__checkbox-check {
-    background-color: var(--main-blue);
-    border-color: transparent;
-  }
+.form-group__checkbox-input:checked ~ .form-group__checkbox-check {
+  background-color: var(--main-blue);
+  border-color: transparent;
+}
 
-  &__checkbox-icon {
-    flex-shrink: 0;
+.form-group__checkbox-icon {
+  flex-shrink: 0;
 
-    fill: transparent;
-    transition: fill 250ms ease;
-  }
+  fill: transparent;
+  transition: fill 250ms ease;
+}
 
-  &__checkbox-input:checked ~ &__checkbox-check &__checkbox-icon {
-    fill: var(--main-white);
-  }
+.form-group__checkbox-input:checked ~ .form-group__checkbox-check .form-group__checkbox-icon {
+  fill: var(--main-white);
 }
 
 .form-group__submit-btn {

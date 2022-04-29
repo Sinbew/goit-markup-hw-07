@@ -375,6 +375,10 @@ body {
   color: rgba(117, 117, 117, 0.5);
 }
 
+.form-group {
+  color: var(--main-grey);
+}
+
 .form-group__checkbox {
   display: flex;
   align-items: center;
@@ -384,7 +388,6 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--main-grey);
 }
 
 .form-group__checkbox .form-group__policy-link {
